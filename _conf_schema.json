@@ -1,0 +1,32 @@
+{
+    "sensevoice_url": {
+        "description": "SenseVoice 服务地址",
+        "type": "string",
+        "hint": "SenseVoice API 地址，例如 http://localhost:8000",
+        "default": "http://156.238.228.199:8000"
+    },
+    "auto_recognize": {
+        "description": "自动识别语音",
+        "type": "bool",
+        "hint": "开启后，收到语音消息会自动转文字并送大模型；关闭后需手动使用 /语音转文字 指令",
+        "default": true
+    },
+    "max_voice_duration": {
+        "description": "最大语音时长(秒)",
+        "type": "int",
+        "hint": "超过此时长的语音将被拒识（0 表示不限制）",
+        "default": 300
+    },
+    "clean_temp_files": {
+        "description": "自动清理临时文件",
+        "type": "bool",
+        "hint": "开启后，超过24小时的临时文件会被自动删除",
+        "default": true
+    },
+    "temp_expire_hours": {
+        "description": "临时文件过期时间(小时)",
+        "type": "int",
+        "hint": "临时文件保留时长，超过后自动删除",
+        "default": 24
+    }
+}
