@@ -23,7 +23,7 @@ except ImportError:
 class SenseVoiceSTTPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
-        self.sensevoice_url = "http://156.238.228.199:8000"
+        self.sensevoice_url = "http://localhost:8000"
         self.temp_dir = os.path.join(os.path.dirname(__file__), "temp_audio")
         os.makedirs(self.temp_dir, exist_ok=True)
         self.ffmpeg_available = shutil.which("ffmpeg") is not None
