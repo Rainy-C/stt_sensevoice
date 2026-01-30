@@ -3,7 +3,7 @@
         "description": "SenseVoice 服务地址",
         "type": "string",
         "hint": "SenseVoice API 地址，例如 http://localhost:8000",
-        "default": "http://156.238.228.199:8000"
+        "default": "http://localhost:8000"
     },
     "auto_recognize": {
         "description": "自动识别语音",
