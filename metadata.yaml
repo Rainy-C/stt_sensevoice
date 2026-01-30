@@ -1,4 +1,4 @@
-name: stt_sensevoice
+name: astrbot_plugin_stt_sensevoice
 author: Toska
 desc: SenseVoice 语音转文字插件 - 支持将语音消息转换为文字
 version: 1.0.0
